@@ -46,8 +46,8 @@
             label = "Lower";
             bindings = <
 &trans  &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &winSpace    &trans   &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &kp SYSREQ
-&trans  &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans       &trans   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
-&trans  &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans   &trans    &trans         &trans     &trans     &trans
+&trans  &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &trans   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
+&trans  &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans   &trans    &trans         &trans     &trans     &trans
                                   &trans                &trans                 &trans       &kp DEL  &trans    &trans
             >;
         };
