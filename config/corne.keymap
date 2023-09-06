@@ -45,10 +45,10 @@
 
             label = "Lower";
             bindings = <
-&trans  &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &winSpace    &trans   &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &kp SYSREQ
-&trans  &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &trans   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
-&trans  &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans   &trans    &trans         &trans     &trans     &trans
-                                  &trans                &trans                 &trans       &kp DEL  &trans    &trans
+&trans       &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &winSpace    &trans   &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &kp SYSREQ
+&trans       &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &trans   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
+&bootloader  &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans   &trans    &trans         &trans     &trans     &trans
+                                       &trans                &trans                 &trans       &kp DEL  &trans    &trans
             >;
         };
 
@@ -63,7 +63,7 @@
             bindings = <
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &sys_reset
+&trans  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &bootloader
                                     &trans        &trans        &trans          &trans        &trans        &trans
             >;
         };
