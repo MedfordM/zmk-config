@@ -7,6 +7,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&sk {
+    quick-release;
+};
+
 / {
     macros {
         winSpace: winSpace {
@@ -29,10 +33,10 @@
 
             label = "Base";
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp F             &kp P    &kp G          &kp J        &kp L          &kp U         &kp Y    &kp SEMICOLON  &kp BACKSLASH
-&sk LEFT_SHIFT  &kp A  &kp R  &kp S             &kp T    &kp D          &kp H        &kp N          &kp E         &kp I    &kp O          &kp SQT
-&kp LEFT_WIN    &kp Z  &kp X  &kp C             &kp V    &kp B          &kp K        &kp M          &kp COMMA     &kp DOT  &kp FSLH       &kp RSHFT
-                              &sk LEFT_CONTROL  &kp TAB  &lt 1 ENTER    &lt 2 SPACE  &kp BACKSPACE  &sk LEFT_ALT
+&sk LEFT_ALT    &kp Q  &kp W  &kp F         &kp P                 &kp G          &kp J        &kp L          &kp U       &kp Y    &kp SEMICOLON  &kp BACKSLASH
+&sk LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T                 &kp D          &kp H        &kp N          &kp E       &kp I    &kp O          &kp SQT
+&kp CAPS        &kp Z  &kp X  &kp C         &kp V                 &kp B          &kp K        &kp M          &kp COMMA   &kp DOT  &kp FSLH       &kp ESCAPE
+                              &kp LEFT_WIN  &mt LEFT_CONTROL TAB  &lt 1 ENTER    &lt 2 SPACE  &kp BACKSPACE  &kp ESCAPE
             >;
         };
 
@@ -45,7 +49,7 @@
 
             label = "Lower";
             bindings = <
-&kp LA(LC(TAB))  &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &winSpace    &kp HOME  &kp PG_DN       &kp PAGE_UP   &kp END    &trans  &kp SYSREQ
+&kp LA(LC(TAB))  &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &winSpace    &kp HOME  &kp PG_DN       &kp PAGE_UP   &kp END    &trans  &kp PRINTSCREEN
 &trans           &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &bootloader      &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans    &trans          &trans        &trans     &trans  &trans
                                            &trans                &trans                 &trans       &kp DEL   &trans          &trans
