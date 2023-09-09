@@ -42,7 +42,7 @@
         };
         td3: td3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD2";
+            label = "TD3";
             #binding-cells = <0>;
             bindings =
                 <&kp D>,
