@@ -21,6 +21,27 @@
         };
     };
 
+    behaviors {
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD1";
+            #binding-cells = <0>;
+            bindings =
+                <&kp A>,
+                <&kp NUMBER_1>,
+                <&kp F1>;
+        };
+        td2: td2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD2";
+            #binding-cells = <0>;
+            bindings =
+                <&kp S>,
+                <&kp NUMBER_2>,
+                <&kp F2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -74,9 +95,9 @@
 
         Gaming {
             bindings = <
-&kp M           &kp Q  &kp W  &kp E  &kp R  &kp T          &trans  &trans  &trans  &trans  &trans  &trans
-&kp I           &td1   &td2   &td3   &td4   &td5           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B          &trans  &trans  &trans  &trans  &trans  &trans
+&kp M           &kp Q  &kp W  &kp E                &kp R          &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp I           &td1   &td2   &td3                 &td4           &td5         &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                &kp V          &kp B        &trans  &trans  &trans  &trans  &trans  &trans
                               &mt LEFT_ALT ESCAPE  &mt LCTRL TAB  &kp SPACE    &trans  &trans  &trans
             >;
 
