@@ -21,6 +21,48 @@
         };
     };
 
+    behaviors {
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = 0;
+            tapping-term-ms = <200>;
+            bindings = <&kp A>, <&kp N1>, <&kp F1>;
+        };
+
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = 0;
+            tapping-term-ms = <200>;
+            bindings = <&kp S>, <&kp N2>, <&kp F2>;
+        }
+
+        td3: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_3";
+            #binding-cells = 0;
+            tapping-term-ms = <200>;
+            bindings = <&kp D>, <&kp N3>, <&kp F3>;
+        }
+
+        td4: tap_dance_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_4";
+            #binding-cells = 0;
+            tapping-term-ms = <200>;
+            bindings = <&kp F>, <&kp N4>, <&kp F4>;
+        }
+
+        td5: tap_dance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_5";
+            #binding-cells = 0;
+            tapping-term-ms = <200>;
+            bindings = <&kp G>, <&kp N5>, <&kp F5>;
+        }
+    }
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -74,10 +116,10 @@
 
         Gaming {
             bindings = <
-&kp M           &kp Q  &kp W  &kp E                &kp R          &kp T          &trans  &trans  &trans  &trans  &trans  &trans
-&kp I           &kp A  &kp S  &kp D                &kp F          &kp G          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                &kp V          &kp B          &trans  &trans  &trans  &trans  &trans  &trans
-                              &mt LEFT_ALT ESCAPE  &mt LCTRL TAB  &lt 2 SPACE    &trans  &trans  &trans
+&kp M           &kp Q  &kp W  &kp E  &kp R  &kp T          &trans  &trans  &trans  &trans  &trans  &trans
+&kp I           &td1   &td2   &td3   &td4   &td5           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B          &trans  &trans  &trans  &trans  &trans  &trans
+                              &mt LEFT_ALT ESCAPE  &mt LCTRL TAB  &kp SPACE    &trans  &trans  &trans
             >;
 
             label = "Gaming";
