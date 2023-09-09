@@ -27,7 +27,6 @@
             label = "TD1";
             #binding-cells = <0>;
             bindings =
-                <&kp A>,
                 <&kp NUMBER_1>,
                 <&kp F1>;
         };
@@ -36,7 +35,6 @@
             label = "TD2";
             #binding-cells = <0>;
             bindings =
-                <&kp S>,
                 <&kp NUMBER_2>,
                 <&kp F2>;
         };
@@ -45,7 +43,6 @@
             label = "TD3";
             #binding-cells = <0>;
             bindings =
-                <&kp D>,
                 <&kp NUMBER_3>,
                 <&kp F3>;
         };
@@ -54,7 +51,6 @@
             label = "TD4";
             #binding-cells = <0>;
             bindings =
-                <&kp F>,
                 <&kp NUMBER_4>,
                 <&kp F4>;
         };
@@ -63,9 +59,43 @@
             label = "TD5";
             #binding-cells = <0>;
             bindings =
-                <&kp G>,
                 <&kp NUMBER_5>,
                 <&kp F5>;
+        };
+        homerow_1: homerow_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HOMEROW_1";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&td1>;
+            mods = <MOD_LCTL>;
+        };
+        homerow_2: homerow_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HOMEROW_2";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&td2>;
+            mods = <MOD_LCTL>;
+        };
+        homerow_3: homerow_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HOMEROW_3";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&td3>;
+            mods = <MOD_LCTL>;
+        };
+        homerow_4: homerow_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HOMEROW_4";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&td4>;
+            mods = <MOD_LCTL>;
+        };
+        homerow_5: homerow_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HOMEROW_5";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&td5>;
+            mods = <MOD_LCTL>;
         };
     };
 
@@ -106,7 +136,7 @@
             label = "Gaming";
             bindings = <
 &kp M           &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y  &kp U  &kp I      &kp O    &kp P          &kp BACKSLASH
-&kp I           &td1   &td2   &td3   &td4   &td5         &kp H  &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp I           &homerow_1    &homerow_2   &homerow_3   &homerow_4   &homerow_5         &kp H  &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH       &to 0
                               &mt LEFT_ALT ESCAPE  &mt LCTRL TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DEL
             >;
