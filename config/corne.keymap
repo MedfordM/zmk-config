@@ -99,7 +99,7 @@
             bindings = <
 &kp LA(LC(TAB))  &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &winSpace    &kp HOME  &kp PG_DN       &kp PAGE_UP   &kp END    &trans  &kp PRINTSCREEN
 &trans           &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&bootloader      &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans    &trans          &trans        &trans     &trans  &trans
+&bootloader      &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans    &trans          &trans        &trans     &trans  &to 3
                                            &trans                &trans                 &trans       &kp DEL   &trans          &trans
             >;
         };
@@ -124,7 +124,7 @@
             bindings = <
 &kp M           &kp Q  &kp W  &kp E                &kp R          &kp T        &trans  &trans  &trans  &trans  &trans  &trans
 &kp I           &td1   &td2   &td3                 &td4           &td5         &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                &kp V          &kp B        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                &kp V          &kp B        &trans  &trans  &trans  &trans  &trans  &to 0
                               &mt LEFT_ALT ESCAPE  &mt LCTRL TAB  &kp SPACE    &trans  &trans  &trans
             >;
 
