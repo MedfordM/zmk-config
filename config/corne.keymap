@@ -198,10 +198,10 @@
         Default {
             label = "Base";
             bindings = <
-&kp LG(SPACE)  &kp Q             &kp W           &kp F       &kp P        &kp G        &kp J          &kp L        &kp U       &kp Y           &kp SEMICOLON  &kp BACKSLASH
-&kp GRAVE      &hm LEFT_SHIFT A  &hm LEFT_GUI R  &hm LALT S  &hm LCTRL T  &kp D        &kp H          &hm LCTRL N  &hm LALT E  &hm LEFT_GUI I  &kp O          &kp SQT
-&kp CAPS       &kp Z             &kp X           &kp C       &kp V        &kp B        &kp K          &kp M        &kp COMMA   &kp DOT         &kp FSLH       &kp PRINTSCREEN
-                                 &LC(LA(TAB))    &kp TAB     &lt 1 ENTER  &lt 2 SPACE  &kp BACKSPACE  &kp ESCAPE
+&kp LG(SPACE)  &kp Q             &kp W            &kp F       &kp P        &kp G        &kp J          &kp L        &kp U       &kp Y           &kp SEMICOLON  &kp BACKSLASH
+&kp GRAVE      &hm LEFT_SHIFT A  &hm LEFT_GUI R   &hm LALT S  &hm LCTRL T  &kp D        &kp H          &hm LCTRL N  &hm LALT E  &hm LEFT_GUI I  &kp O          &kp SQT
+&kp CAPS       &kp Z             &kp X            &kp C       &kp V        &kp B        &kp K          &kp M        &kp COMMA   &kp DOT         &kp FSLH       &kp PRINTSCREEN
+                                 &kp LC(LA(TAB))  &kp TAB     &lt 1 ENTER  &lt 2 SPACE  &kp BACKSPACE  &kp ESCAPE
             >;
         };
 
