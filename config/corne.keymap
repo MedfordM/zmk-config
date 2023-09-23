@@ -20,175 +20,23 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <125>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <250>;
             global-quick-tap;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        td1: td1 {
+        td: tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD1";
+            label = "TAP_DANCE";
             #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_1>,
-                <&kp F1>;
+            bindings = <&kp>, <&kp>;
         };
-        td2: td2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD2";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_2>,
-                <&kp F2>;
-        };
-        td3: td3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD3";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_3>,
-                <&kp F3>;
-        };
-        td4: td4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD4";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_4>,
-                <&kp F4>;
-        };
-        td5: td5 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD5";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_5>,
-                <&kp F5>;
-        };
-        td6: td6 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD6";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_6>,
-                <&kp F6>;
-        };
-        td7: td7 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD7";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_7>,
-                <&kp F7>;
-        };
-        td8: td8 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD8";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_8>,
-                <&kp F8>;
-        };
-        td9: td9 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD9";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_9>,
-                <&kp F9>;
-        };
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
-            #binding-cells = <0>;
-            bindings =
-                <&kp NUMBER_0>,
-                <&kp F10>;
-        };
-        homerow_1: homerow_1 {
+        hnf: homerow_number_function {
             compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_1";
+            label = "HOMEROW_NUMBER_FUNCTION";
             #binding-cells = <0>;
-            bindings =
-                <&kp A>,
-                <&td1>;
-
-            mods = <MOD_LCTL>;
-        };
-        homerow_2: homerow_2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_2";
-            #binding-cells = <0>;
-            bindings =
-                <&kp S>,
-                <&td2>;
-
-            mods = <MOD_LCTL>;
-        };
-        homerow_3: homerow_3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_3";
-            #binding-cells = <0>;
-            bindings =
-                <&kp D>,
-                <&td3>;
-
-            mods = <MOD_LCTL>;
-        };
-        homerow_4: homerow_4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_4";
-            #binding-cells = <0>;
-            bindings =
-                <&kp F>,
-                <&td4>;
-
-            mods = <MOD_LCTL>;
-        };
-        homerow_5: homerow_5 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_5";
-            #binding-cells = <0>;
-            bindings =
-                <&kp G>,
-                <&td5>;
-
-            mods = <MOD_LCTL>;
-        };
-        homerow_6: homerow_6 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_6";
-            #binding-cells = <0>;
-            bindings = <&kp H>, <&td6>;
-            mods = <MOD_LCTL>;
-        };
-        homerow_7: homerow_7 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_7";
-            #binding-cells = <0>;
-            bindings = <&kp J>, <&td7>;
-            mods = <MOD_LCTL>;
-        };
-        homerow_8: homerow_8 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_8";
-            #binding-cells = <0>;
-            bindings = <&kp K>, <&td8>;
-            mods = <MOD_LCTL>;
-        };
-        homerow_9: homerow_9 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_9";
-            #binding-cells = <0>;
-            bindings = <&kp L>, <&td9>;
-            mods = <MOD_LCTL>;
-        };
-        homerow_0: homerow_0 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOMEROW_0";
-            #binding-cells = <0>;
-            bindings = <&kp SEMICOLON>, <&td0>;
+            bindings = <&kp>, <&td>;
             mods = <MOD_LCTL>;
         };
     };
@@ -199,9 +47,9 @@
         Default {
             label = "Base";
             bindings = <
-&kp LG(SPACE)  &kp Q             &kp W            &kp F       &kp P        &kp G        &kp J          &kp L        &kp U       &kp Y           &kp SEMICOLON  &kp BACKSLASH
-&kp GRAVE      &hm LEFT_SHIFT A  &hm LEFT_GUI R   &hm LALT S  &hm LCTRL T  &kp D        &kp H          &hm LCTRL N  &hm LALT E  &hm LEFT_GUI I  &kp O          &kp SQT
-&kp CAPS       &kp Z             &kp X            &kp C       &kp V        &kp B        &kp K          &kp M        &kp COMMA   &kp DOT         &kp FSLH       &kp PRINTSCREEN
+&kp LG(SPACE)  &kp Q             &kp W            &kp F       &kp P        &kp G        &kp J          &kp L        &kp U       &kp Y           &kp SEMICOLON     &kp BACKSLASH
+&kp GRAVE      &hm LEFT_SHIFT A  &hm LEFT_GUI R   &hm LALT S  &hm LCTRL T  &kp D        &kp H          &hm LCTRL N  &hm LALT E  &hm LEFT_GUI I  &hm LEFT_SHIFT O  &kp SQT
+&kp CAPS       &kp Z             &kp X            &kp C       &kp V        &kp B        &kp K          &kp M        &kp COMMA   &kp DOT         &kp FSLH          &kp PRINTSCREEN
                                  &kp LC(LA(TAB))  &kp TAB     &lt 1 ENTER  &lt 2 SPACE  &kp BACKSPACE  &kp ESCAPE
             >;
         };
@@ -230,7 +78,7 @@
             label = "Gaming";
             bindings = <
 &kp M           &kp Q       &kp W       &kp E                &kp R          &kp T          &kp Y       &kp U          &kp I       &kp O       &kp P       &kp BACKSLASH
-&kp I           &homerow_1  &homerow_2  &homerow_3           &homerow_4     &homerow_5     &homerow_6  &homerow_7     &homerow_8  &homerow_9  &homerow_0  &kp SQT
+&kp I           &hnf <A>, <NUMBER_1, F1>    &trans  &trans           &trans     &trans     &trans  &trans     &trans  &trans  &trans  &kp SQT
 &kp LEFT_SHIFT  &kp Z       &kp X       &kp C                &kp V          &kp B          &kp N       &kp M          &kp COMMA   &kp DOT     &kp FSLH    &to 0
                                         &mt LEFT_ALT ESCAPE  &mt LCTRL TAB  &kp SPACE      &kp ENTER   &kp BACKSPACE  &kp DEL
             >;
