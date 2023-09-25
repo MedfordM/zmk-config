@@ -26,15 +26,12 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&kp CAPS>, <&caps_word>;
         };
-
         td: td {
             compatible = "zmk,behavior-tap-dance";
             label = "TD";
             #binding-cells = <0>;
             bindings = <&kp>, <&kp>;
         };
-
-
         td1: td1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD1";
