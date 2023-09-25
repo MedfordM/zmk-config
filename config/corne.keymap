@@ -11,11 +11,21 @@
     quick-release;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
     macros {
     };
 
     behaviors {
+        tds: tapdance_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&kp CAPS>, <&caps_word>;
+        };
         td1: td1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD1";
@@ -189,10 +199,10 @@
         Default {
             label = "Base";
             bindings = <
-&kp LG(SPACE)    &kp Q  &kp W  &kp F         &kp P                 &kp G          &kp J        &kp L                   &kp U       &kp Y    &kp SEMICOLON  &kp BACKSLASH
-&sk LEFT_SHIFT   &kp A  &kp R  &kp S         &kp T                 &kp D          &kp H        &kp N                   &kp E       &kp I    &kp O          &kp SQT
-&kp LA(LC(TAB))  &kp Z  &kp X  &kp C         &kp V                 &kp B          &kp K        &kp M                   &kp COMMA   &kp DOT  &kp FSLH       &kp PRINTSCREEN
-                               &kp LEFT_WIN  &mt LEFT_CONTROL TAB  &lt 1 ENTER    &lt 2 SPACE  &mt LEFT_ALT BACKSPACE  &kp ESCAPE
+&kp LG(SPACE)           &kp Q  &kp W  &kp F         &kp P                 &kp G          &kp J        &kp L                   &kp U       &kp Y    &kp SEMICOLON  &kp BACKSLASH
+&td LEFT_SHIFT CAPS     &kp A  &kp R  &kp S         &kp T                 &kp D          &kp H        &kp N                   &kp E       &kp I    &kp O          &kp SQT
+&kp LA(LC(TAB))         &kp Z  &kp X  &kp C         &kp V                 &kp B          &kp K        &kp M                   &kp COMMA   &kp DOT  &kp FSLH       &kp PRINTSCREEN
+                               &kp LEFT_WIN  &mt LEFT_CONTROL TAB  &lt 1 ENTER    &lt 2 SPACE  &kp BACKSPACE  &mt LALT ESCAPE
             >;
         };
 
