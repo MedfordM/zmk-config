@@ -21,7 +21,10 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_SHIFT";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&kp CAPS>, <&caps_word>;
+            bindings =
+                <&sk LEFT_SHIFT>,
+                <&kp CAPS>,
+                <&caps_word>;
         };
         td1: td1 {
             compatible = "zmk,behavior-tap-dance";
@@ -157,35 +160,50 @@
             compatible = "zmk,behavior-mod-morph";
             label = "HOMEROW_6";
             #binding-cells = <0>;
-            bindings = <&kp H>, <&td6>;
+            bindings =
+                <&kp H>,
+                <&td6>;
+
             mods = <MOD_LCTL>;
         };
         homerow_7: homerow_7 {
             compatible = "zmk,behavior-mod-morph";
             label = "HOMEROW_7";
             #binding-cells = <0>;
-            bindings = <&kp J>, <&td7>;
+            bindings =
+                <&kp J>,
+                <&td7>;
+
             mods = <MOD_LCTL>;
         };
         homerow_8: homerow_8 {
             compatible = "zmk,behavior-mod-morph";
             label = "HOMEROW_8";
             #binding-cells = <0>;
-            bindings = <&kp K>, <&td8>;
+            bindings =
+                <&kp K>,
+                <&td8>;
+
             mods = <MOD_LCTL>;
         };
         homerow_9: homerow_9 {
             compatible = "zmk,behavior-mod-morph";
             label = "HOMEROW_9";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&td9>;
+            bindings =
+                <&kp L>,
+                <&td9>;
+
             mods = <MOD_LCTL>;
         };
         homerow_0: homerow_0 {
             compatible = "zmk,behavior-mod-morph";
             label = "HOMEROW_0";
             #binding-cells = <0>;
-            bindings = <&kp SEMICOLON>, <&td0>;
+            bindings =
+                <&kp SEMICOLON>,
+                <&td0>;
+
             mods = <MOD_LCTL>;
         };
     };
@@ -196,9 +214,9 @@
         Default {
             label = "Base";
             bindings = <
-&kp LG(SPACE)    &kp Q  &kp W  &kp F         &kp P                 &kp G          &kp J        &kp L                   &kp U       &kp Y    &kp SEMICOLON  &kp BACKSLASH
-&tds             &kp A  &kp R  &kp S         &kp T                 &kp D          &kp H        &kp N                   &kp E       &kp I    &kp O          &kp SQT
-&kp LA(LC(TAB))  &kp Z  &kp X  &kp C         &kp V                 &kp B          &kp K        &kp M                   &kp COMMA   &kp DOT  &kp FSLH       &kp PRINTSCREEN
+&kp LG(SPACE)    &kp Q  &kp W  &kp F         &kp P                 &kp G          &kp J        &kp L          &kp U            &kp Y    &kp SEMICOLON  &kp BACKSLASH
+&tds             &kp A  &kp R  &kp S         &kp T                 &kp D          &kp H        &kp N          &kp E            &kp I    &kp O          &kp SQT
+&kp LA(LC(TAB))  &kp Z  &kp X  &kp C         &kp V                 &kp B          &kp K        &kp M          &kp COMMA        &kp DOT  &kp FSLH       &kp PRINTSCREEN
                                &kp LEFT_WIN  &mt LEFT_CONTROL TAB  &lt 1 ENTER    &lt 2 SPACE  &kp BACKSPACE  &mt LALT ESCAPE
             >;
         };
@@ -206,10 +224,10 @@
         Symbols {
             label = "Symbols";
             bindings = <
-&trans       &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LG(SPACE)    &kp HOME  &kp PG_DN       &kp PAGE_UP   &kp END    &trans  &trans
-&trans       &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE        &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&bootloader  &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE        &trans    &trans          &trans        &trans     &trans  &to 3
-                                       &trans                &trans                 &trans           &trans    &trans          &trans
+&trans       &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &kp HOME  &kp PG_DN       &kp PAGE_UP   &kp END    &trans  &trans
+&trans       &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&bootloader  &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans    &trans          &trans        &trans     &trans  &to 3
+                                       &trans                &trans                 &trans       &trans    &trans          &trans
             >;
         };
 
@@ -226,10 +244,10 @@
         Gaming {
             label = "Gaming";
             bindings = <
-&kp M           &kp Q       &kp W                &kp E          &kp R        &kp T        &kp Y          &kp U       &kp I       &kp O       &kp P       &kp BACKSLASH
-&kp I           &homerow_1  &homerow_2           &homerow_3     &homerow_4   &homerow_5   &homerow_6     &homerow_7  &homerow_8  &homerow_9  &homerow_0  &kp SQT
-&kp LEFT_SHIFT  &kp Z       &kp X                &kp C          &kp V        &kp B        &kp N          &kp M       &kp COMMA   &kp DOT     &kp FSLH    &to 0
-                            &mt LEFT_ALT ESCAPE  &mt LCTRL TAB  &kp SPACE    &kp ENTER    &kp BACKSPACE  &kp DEL
+&kp M           &kp Q       &kp W       &kp E                &kp R          &kp T         &kp Y       &kp U          &kp I       &kp O       &kp P       &kp BACKSLASH
+&kp I           &homerow_1  &homerow_2  &homerow_3           &homerow_4     &homerow_5    &homerow_6  &homerow_7     &homerow_8  &homerow_9  &homerow_0  &kp SQT
+&kp LEFT_SHIFT  &kp Z       &kp X       &kp C                &kp V          &kp B         &kp N       &kp M          &kp COMMA   &kp DOT     &kp FSLH    &to 0
+                                        &mt LEFT_ALT ESCAPE  &mt LCTRL TAB  &kp SPACE     &kp ENTER   &kp BACKSPACE  &kp DEL
             >;
         };
     };
