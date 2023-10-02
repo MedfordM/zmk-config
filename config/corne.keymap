@@ -214,18 +214,18 @@
         Default {
             label = "Base";
             bindings = <
-&kp LG(SPACE)    &kp Q  &kp W  &kp F         &kp P                 &kp G          &kp J        &kp L          &kp U            &kp Y    &kp SEMICOLON  &kp BACKSLASH
-&tds             &kp A  &kp R  &kp S         &kp T                 &kp D          &kp H        &kp N          &kp E            &kp I    &kp O          &kp SQT
-&kp LA(LC(TAB))  &kp Z  &kp X  &kp C         &kp V                 &kp B          &kp K        &kp M          &kp COMMA        &kp DOT  &kp FSLH       &kp PRINTSCREEN
-                               &kp LEFT_WIN  &mt LEFT_CONTROL TAB  &lt 1 ENTER    &lt 2 SPACE  &kp BACKSPACE  &mt LALT ESCAPE
+&kp LG(SPACE)    &kp Q  &kp W  &kp F      &kp P    &kp G          &kp J        &kp L          &kp U            &kp Y    &kp SEMICOLON  &kp BACKSLASH
+&tds             &kp A  &kp R  &kp S      &kp T    &kp D          &kp H        &kp N          &kp E            &kp I    &kp O          &mt LSHFT SQT
+&kp LA(LC(TAB))  &kp Z  &kp X  &kp C      &kp V    &kp B          &kp K        &kp M          &kp COMMA        &kp DOT  &kp FSLH       &kp LEFT_META
+                               &sk LCTRL  &kp TAB  &lt 1 ENTER    &lt 2 SPACE  &kp BACKSPACE  &mt LALT ESCAPE
             >;
         };
 
         Symbols {
             label = "Symbols";
             bindings = <
-&trans       &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &kp HOME  &kp PG_DN       &kp PAGE_UP   &kp END    &trans  &trans
-&trans       &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans       &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &kp HOME  &kp PG_DN       &kp PAGE_UP   &kp END    &trans  &kp PRINTSCREEN
+&trans       &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &kp LC(LA(DELETE))
 &bootloader  &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans    &trans          &trans        &trans     &trans  &to 3
                                        &trans                &trans                 &trans       &trans    &trans          &trans
             >;
