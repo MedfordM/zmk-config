@@ -1,8 +1,7 @@
-/ {
-    &sk {
-        quick-release;
-    };
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS>;
-    };
+&sk {
+    quick-release;
+};
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
 };
