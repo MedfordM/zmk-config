@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "config/includes/includes.dtsi"
 #include "includes/includes.dtsi"
 
 / {
