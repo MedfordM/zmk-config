@@ -1,0 +1,9 @@
+/ {
+    &sk {
+        quick-release;
+    };
+
+    &caps_word {
+        continue-list = <UNDERSCORE MINUS>;
+    };
+}
