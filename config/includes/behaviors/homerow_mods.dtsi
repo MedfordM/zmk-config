@@ -5,6 +5,7 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5
 #define KEYS_T LH2 LH1 LH0 RH0 RH1 RH2
 
+#define QUICK_TAP_MS 200
 #define HM_TAPPING_TERM 200
 #define HM_TAPPING_TERM_FAST 200
 
@@ -19,7 +20,7 @@
             require-prior-idle-ms = <200>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <125>;                // repeat on tap-into-hold
+            quick-tap-ms = <QUICK_TAP_MS>;                // repeat on tap-into-hold
             global-quick-tap;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
@@ -33,7 +34,7 @@
             require-prior-idle-ms = <200>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick_tap_ms = <125>;
+            quick_tap_ms = <QUICK_TAP_MS>;
             global-quick-tap;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
@@ -51,7 +52,7 @@
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick_tap_ms = <125>;
+            quick_tap_ms = <QUICK_TAP_MS>;
             global-quick-tap;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             // hold-trigger-on-release;             // requires PR #1423
@@ -65,7 +66,7 @@
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick_tap_ms = <125>;
+            quick_tap_ms = <QUICK_TAP_MS>;
             global-quick-tap;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             // hold-trigger-on-release;             // requires PR #1423
