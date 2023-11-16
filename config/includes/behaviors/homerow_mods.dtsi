@@ -16,10 +16,10 @@
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
             bindings = <&kp>,  <&kp>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <100>;                // repeat on tap-into-hold
+            quick-tap-ms = <125>;                // repeat on tap-into-hold
             global-quick-tap;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
@@ -30,10 +30,10 @@
             label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick_tap_ms = <100>;
+            quick_tap_ms = <125>;
             global-quick-tap;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
@@ -51,7 +51,7 @@
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick_tap_ms = <100>;
+            quick_tap_ms = <125>;
             global-quick-tap;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             // hold-trigger-on-release;             // requires PR #1423
@@ -65,7 +65,7 @@
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick_tap_ms = <100>;
+            quick_tap_ms = <125>;
             global-quick-tap;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             // hold-trigger-on-release;             // requires PR #1423
