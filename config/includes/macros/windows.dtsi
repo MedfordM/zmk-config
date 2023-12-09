@@ -8,7 +8,7 @@ ZMK_BEHAVIOR(
     at: alt_tab {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <kp LA(LC(TAB))>;
+      bindings = <&kp LA(LC(TAB))>;
     };
   };
 }
