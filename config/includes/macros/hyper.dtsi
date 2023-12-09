@@ -1,11 +1,15 @@
-ZMK_BEHAVIOR(
-  hyp,
-  macro,
-  bindings = <&sk LG(LCTRL(LA(LS)))>;
-)
+/ {
+  macros {
+    hyp: hyper {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&sk LG(LCTRL(LA(LS)))>;
+    };
 
-ZMK_BEHAVIOR(
-  hypk,
-  macro_one_param,
-  bindings = <&hyp>, <&macro_param_1to1>, <&kp>;
-)
+    hypk: hyper_key {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&hyp>, <&macro_param_1to1>, <&kp>;
+    };
+  };
+};
