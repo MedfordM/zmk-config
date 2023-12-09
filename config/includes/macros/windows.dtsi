@@ -1,5 +1,14 @@
 ZMK_BEHAVIOR(
   at,
   macro,
-  bindings = <kp LA(LC(TAB))>;
 )
+
+/ {
+  macros {
+    at: alt_tab {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <kp LA(LC(TAB))>;
+    };
+  };
+}

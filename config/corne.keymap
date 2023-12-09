@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include "../zmk-nodefree-config/helper.h"
 #include "includes/behaviors/config.dtsi"
 #include "includes/behaviors/gaming.dtsi"
 #include "includes/behaviors/homerow_mods.dtsi"
