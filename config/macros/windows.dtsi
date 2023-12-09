@@ -1,0 +1,5 @@
+ZMK_BEHAVIOR(
+  at,
+  macro,
+  bindings = <kp LA(LC(TAB))>;
+)
