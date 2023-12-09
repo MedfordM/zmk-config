@@ -1,4 +1,10 @@
 ZMK_BEHAVIOR(
+  hyp,
+  macro,
+  bindings = <&sk LG(LCTRL(LA(LS)))>;
+)
+
+ZMK_BEHAVIOR(
   hypk,
   macro_one_param,
   bindings = <&hyp>, <&macro_param_1to1>, <&kp>;
