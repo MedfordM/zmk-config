@@ -3,12 +3,12 @@
     hyp: hyper {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&sk LG(LCTRL(LA(LS)))>;
+      bindings = <&sk LG(LS(LA(LCTRL)))>;
     };
 
     hypk: hyper_key {
       compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
+      #binding-cells = <1>;
       bindings = <&hyp>, <&macro_param_1to1>, <&kp>;
     };
   };
