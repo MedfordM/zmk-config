@@ -1,8 +1,3 @@
-ZMK_BEHAVIOR(
-  at,
-  macro,
-)
-
 / {
   macros {
     at: alt_tab {
