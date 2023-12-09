@@ -6,5 +6,11 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
+
+        hyp: hyper {
+          compatible = "zmk,behavior-sticky-key";
+          #binding-cells = <1>;
+          bindings = LG(LS(LA(LCTRL)));
+        };
     };
 };
