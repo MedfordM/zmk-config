@@ -6,4 +6,4 @@
       bindings = <&kp LA(LC(TAB))>;
     };
   };
-}
+};
