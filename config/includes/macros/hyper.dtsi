@@ -3,7 +3,7 @@
     hyp: hyper {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&sk LG(LS(LA(LCTRL)))>;
+      bindings = <&sk LG(LA(LCTRL))>;
     };
 
     hypk: hyper_key {
