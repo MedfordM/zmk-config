@@ -1,0 +1,13 @@
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+      Default {
+        label = "Base";
+        bindings =
+         <&kp ESCAPE  &kp Q  &kp W             &kp F             &kp P          &kp G          &kp J        &kp L          &kp U             &kp Y             &kp SEMICOLON  &kp BACKSLASH
+          &tds        &kp A  &hm_l LEFT_ALT R  &hm_l LEFT_GUI S  &hm_l LCTRL T  &kp D          &kp H        &hm_r LCTRL N  &hm_r LEFT_GUI E  &hm_r LEFT_ALT I  &kp O          &kp SQT
+          &at         &kp Z  &kp X             &kp C             &kp V          &kp B          &kp K        &kp M          &kp COMMA         &kp DOT           &kp FSLH       &hypk SPACE
+                                               &tds              &kp TAB        &lt 1 ENTER    &lt 2 SPACE  &kp BACKSPACE  &hyp>;
+    };
+  };
+};

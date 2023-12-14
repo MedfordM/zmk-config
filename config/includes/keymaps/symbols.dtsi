@@ -1,0 +1,13 @@
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+      Symbols {
+        label = "Symbols";
+        bindings =
+         <&trans       &kp BACKSLASH  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &kp HOME  &kp PG_DN       &kp PAGE_UP   &kp END    &trans  &kp PRINTSCREEN
+          &trans       &kp MINUS      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &kp LC(LA(DELETE))
+          &bootloader  &kp UNDER      &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &trans    &trans          &trans        &trans     &trans  &to 4
+                                                 &trans                &trans                 &trans       &trans    &trans          &trans>;
+    };
+  };
+};

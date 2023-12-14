@@ -1,0 +1,13 @@
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+    Gaming {
+      label = "Gaming";
+      bindings =
+       <&kp ESCAPE      &kp Q       &kp W       &kp E         &kp R       &kp T         &kp Y       &kp U          &kp I       &kp O       &kp P       &kp BACKSLASH
+        &kp TAB         &homerow_1  &homerow_2  &homerow_3    &homerow_4  &homerow_5    &homerow_6  &homerow_7     &homerow_8  &homerow_9  &homerow_0  &kp SQT
+        &kp LEFT_SHIFT  &kp Z       &kp X       &kp C         &kp V       &kp B         &kp N       &kp M          &kp COMMA   &kp DOT     &kp FSLH    &to 0
+                                                &kp LEFT_ALT  &kp LCTRL   &kp SPACE     &kp ENTER   &kp BACKSPACE  &kp DEL>;
+    };
+  };
+};
