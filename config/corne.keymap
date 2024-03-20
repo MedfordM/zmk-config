@@ -24,9 +24,9 @@
 #define  SYSTEM  4
 
 #include "includes/keymaps/default.dtsi"
+#include "includes/keymaps/gaming.dtsi"
 #include "includes/keymaps/symbols.dtsi"
 #include "includes/keymaps/numbers.dtsi"
 #include "includes/keymaps/system.dtsi"
-#include "includes/keymaps/gaming.dtsi"
 #include "includes/keymaps/conditions.dtsi"
 
