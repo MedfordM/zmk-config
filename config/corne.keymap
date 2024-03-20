@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "includes/behaviors/config.dtsi"
-#include "includes/behaviors/gaming.dtsi"
 #include "includes/behaviors/homerow_mods.dtsi"
 #include "includes/behaviors/general.dtsi"
 
