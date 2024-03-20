@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_FAST_LEFT";
             #binding-cells = <2>;
-            bindings = <&kp LEFT_SHIFT>, <&kp>;
+            bindings = <&kp>, <&kp>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_FAST_RIGHT";
             #binding-cells = <2>;
-            bindings = <&kp LEFT_SHIFT>, <&kp>;
+            bindings = <&kp>, <&kp>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
