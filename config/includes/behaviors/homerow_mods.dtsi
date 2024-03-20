@@ -44,11 +44,11 @@
         // Positional Homerow mods for shift
         // Use faster tapping term and disable some features that may
         // cause false negatives.
-        hm_shift_l: hm_shift_l {
+        hms_l: hms_l {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_FAST_LEFT";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp LEFT_SHIFT>, <&kp>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
@@ -58,11 +58,11 @@
             // hold-trigger-on-release;             // requires PR #1423
         };
 
-        hm_shift_r: hm_shift_r {
+        hms_r: hms_r {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_FAST_RIGHT";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp LEFT_SHIFT>, <&kp>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
