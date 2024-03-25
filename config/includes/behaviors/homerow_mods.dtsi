@@ -2,7 +2,7 @@
 
 #define QUICK_TAP_MS 200
 #define HM_TAPPING_TERM 200
-#define HM_TAPPING_TERM_FAST 100
+#define HM_TAPPING_TERM_FAST 175
 
 / {
 
@@ -55,7 +55,7 @@
             label = "HOMEROW_MODS_FAST_RIGHT";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <HM_TAPPING_TERM_FAST>;
             flavor = "balanced";
             tapping-term-ms = <150>;
             quick_tap_ms = <QUICK_TAP_MS>;
