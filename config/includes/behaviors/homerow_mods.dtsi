@@ -57,7 +57,7 @@
             bindings = <&kp>, <&kp>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+            tapping-term-ms = <150>;
             quick_tap_ms = <QUICK_TAP_MS>;
             global-quick-tap;
             hold-trigger-key-positions = <KEYS_L KEYS_THUMB_L>;
