@@ -1,0 +1,14 @@
+/ {
+    hyp_mod: hyp_mod {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HYPER_MOD";
+        #binding-cells = <2>;
+        bindings = <&hyp>, <&sk>;
+        require-prior-idle-ms = <100>;
+        flavor = "balanced";
+        tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+        quick_tap_ms = <QUICK_TAP_MS>;
+        global-quick-tap;
+    };
+}
+

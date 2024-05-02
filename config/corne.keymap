@@ -11,6 +11,7 @@
 
 #include "includes/behaviors/config.dtsi"
 #include "includes/behaviors/homerow_mods.dtsi"
+#include "includes/behaviors/hyper_mod.dtsi"
 #include "includes/behaviors/general.dtsi"
 
 #include "includes/macros/hyper.dtsi"
