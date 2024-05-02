@@ -4,7 +4,7 @@
         label = "HYPER_MOD";
         #binding-cells = <2>;
         bindings = <&hyp>, <&sk>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <100>;
+        flavor = "balanced";
+        tapping-term-ms = <175>;
     };
 };
