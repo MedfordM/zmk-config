@@ -10,5 +10,4 @@
         quick_tap_ms = <QUICK_TAP_MS>;
         global-quick-tap;
     };
-}
-
+};
