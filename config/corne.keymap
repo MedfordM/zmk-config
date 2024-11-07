@@ -9,13 +9,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#include "includes/behaviors/config.dtsi"
-#include "includes/behaviors/homerow_mods.dtsi"
-#include "includes/behaviors/hyper_mod.dtsi"
-#include "includes/behaviors/general.dtsi"
+#include "behaviors/config.dtsi"
+#include "behaviors/homerow_mods.dtsi"
+#include "behaviors/hyper_mod.dtsi"
+#include "behaviors/general.dtsi"
 
-#include "includes/macros/hyper.dtsi"
-#include "includes/macros/windows.dtsi"
+#include "macros/hyper.dtsi"
+#include "macros/windows.dtsi"
 
 #define  DEFAULT 0
 #define  GAMING  1
@@ -23,11 +23,11 @@
 #define  NUMBERS 3
 #define  SYSTEM  4
 
-#include "includes/keymaps/physical_layout.dtsi"
-#include "includes/keymaps/default.dtsi"
-#include "includes/keymaps/gaming.dtsi"
-#include "includes/keymaps/symbols.dtsi"
-#include "includes/keymaps/numbers.dtsi"
-#include "includes/keymaps/system.dtsi"
-#include "includes/keymaps/conditions.dtsi"
+#include "keymaps/physical_layout.dtsi"
+#include "keymaps/default.dtsi"
+#include "keymaps/gaming.dtsi"
+#include "keymaps/symbols.dtsi"
+#include "keymaps/numbers.dtsi"
+#include "keymaps/system.dtsi"
+#include "keymaps/conditions.dtsi"
 
