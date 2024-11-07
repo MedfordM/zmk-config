@@ -23,6 +23,7 @@
 #define  NUMBERS 3
 #define  SYSTEM  4
 
+#include "includes/keymaps/physical_layout.dtsi"
 #include "includes/keymaps/default.dtsi"
 #include "includes/keymaps/gaming.dtsi"
 #include "includes/keymaps/symbols.dtsi"
