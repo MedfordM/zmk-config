@@ -7,7 +7,7 @@
        <&bt BT_NXT      &trans     &kp KP_NUM  &kp SLCK     &kp CAPS    &kp PRINTSCREEN     &kp C_RW    &kp K_PP      &kp K_MUTE    &kp C_FF    &kp C_SHUFFLE  &out OUT_BLE
         &studio_unlock  &sk LSHFT  &sk LALT    &sk LGUI     &sk LCTRL   &kp LC(LA(DELETE))  &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT  &kp C_REPEAT   &trans
         &bt BT_CLR      &trans     &trans      &kp K_SLEEP  &kp K_LOCK  &trans              &trans      &trans        &trans        &trans      &trans         &out OUT_USB
-                                              &bootloader  &trans      &trans              &trans      &trans        &bootloader>;
+                                               &bootloader  &trans      &trans              &trans      &trans        &bootloader>;
     };
   };
 };
